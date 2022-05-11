@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Article page</title>
+    <link rel="stylesheet" href="article.css">
+</head>
+<body> 
+        <div class="article-box showcase active">
+            <div class="left-box">
+                <div class="hide-box showcase">
+                    <div class="hide-text">
+                    <h3>Share</h3>
+                </div>
+                    <img src="images/icon-facebook.svg">
+                    <img src="images/icon-twitter.svg">
+                    <img src="images/icon-pinterest.svg">
+                </div>
+            </div>
+            <div class="right-box">
+                           <h1> Shift the overall look and feel by adding these wonderful 
+                    touches to furniture in your home</h1>
+                    <p> Ever been in a room and felt like something was missing?<br> Perhaps 
+                        it felt slightly bare and uninviting. I’ve got some simple<br> tips 
+                        to help you make any room feel complete.</p>
+                        <div class="row-section">
+                            <div class="img-row">
+                                <img src="images/avatar-michelle.jpg">
+                                <div class="name-row">
+                                    <h2>MIchelle Appleton</h2>
+                                    <span> 28 Jun 2020</span>
+                                </div>
+                            </div>
+
+                            <div class="img-link toggle active">
+                              <a href=""><img src="images/icon-share.svg"></a>
+                            </div>
+                        </div>    
+            </div>
+        </div>
+        <script>
+            const menutoggle=document.querySelector("toggle");
+            const showcase=document.querySelector("showcase");
+
+         menutoggle.addEventListener('click', () =>{
+            menutoggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+         }
+         )
+            
+
+        </script>
+</body>
+</html>
